@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff&display=swap');
+
+body {
+  background-color:  white;
+  position: relative;
+   margin: 0;
+   min-height: 100%;
+}
+
+/*Navigation*/
+ul {
+  list-style-type: none;
+  padding: 8px;
+  margin: 0;
+  overflow: hidden;
+  background-color: white;
+  opacity: 95%;
+  position: -webkit-sticky; /* Safari */
+  z-index: 99;
+  position: sticky;
+  top: 0;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  box-shadow: 0px 1px 10px #999;
+}
+
+.logo {
+  width: 12%;
+  margin-left: 18px;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+li a:hover {
+  color: grey;
+}
+
+
+/* Forside billede & tekst */
+.forside-billede {
+  background-image: url("forside7.jpg");
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  box-shadow: 0px 1px 10px black;
+}
+
+.forside-tekst {
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50%;
+  width:50%;
+  z-index: 2;
+}
+
+#forside {
+  font-family: 'Montserrat';
+  font-weight: 100;
+  font-size: 45px;
+  color: white;
+  text-shadow: black;
+  margin-top: 15%;
+  background-color: rgba(00, 00, 00, 0.9);
+}
+
+.hr-2 {
+  border:none;
+  height: 20px;
+ 	width: 100%;
+	height: 50px;
+	margin-top: 0;
+	border-bottom: 1px solid grey;
+	box-shadow: 0px 20px 20px -20px #333;
+  margin: -50px auto 10px;
+}
+
+.multi {
+  font-family: 'Montserrat';
+  font-weight: 100;
+  font-size: 16px;
+  margin: 1%;
+  color: white;
+  text-shadow: black;
+  text-align: inherit;
+  background-color: rgba(00, 00, 00, 0.9);
+}
+
+/* portfolio */
+#portfolio {
+  margin-top: 10%;
+  margin-bottom: 1%;
+  font-size: 55px;
+  text-align: center;
+  color: #0d0d0d;
+  background-color: white;
+  font-family: 'Montserrat';
+  font-weight: 100;
+}
+
+.beskrivelse {
+  font-family: 'Montserrat';
+  margin-top: 25px;
+  margin-left: 22%;
+  font-size: 20px;
+}
+
+.hr3 {
+  margin-top: 80%;
+  border:none;
+  height: 20px;
+	height: 50px;
+	border-bottom: 1px solid grey;
+	box-shadow: 0px 20px 20px -20px #333;
+  margin: -50px auto 10px;
+  width: 35%;
+}
+
+/* Billede opsætning */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 11%;
+  position: relative;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  max-width: 25%;
+  padding: 6px;
+  width: 100%;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.p1 {
+  position: relative;
+  width: 100%;
+}
+
+.billede {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .2s ease;
+  background-color: rgba(00, 00, 00, 0.6);
+}
+
+.p1:hover .overlay {
+  opacity: 1;
+}
+
+
+.tekst {
+  font-family: 'Montserrat';
+  font-weight: 100;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Kompetencer */
+.hr4 {
+    border:none;
+    height: 20px;
+  	height: 50px;
+  	border-bottom: 0.5px solid white;
+  	box-shadow: 0px 20px 20px -20px black;
+    margin: -50px auto 10px;
+    width: 35%;
+  }
+
+#kompetencer {
+  margin-top: 8%;
+  margin-bottom: 1%;
+  font-size: 55px;
+  text-align: center;
+  color: #0d0d0d;
+  font-family: 'Montserrat';
+  font-weight: 100;
+  color: white;
+}
+
+.kompetencer2 {
+  display: block;
+  margin-left: 3%;
+  background-color: rgba(00, 00, 00, 0.7);
+  width: 49%;
+}
+
+.kompetencer3 {
+  background-image: url("forside8.jpg");
+  background-size: cover;
+  box-shadow: 0px 1px 10px black;
+  margin-top: -5%;
+  background-attachment: fixed;
+}
+
+.beskrivelse2{
+  font-family: 'Montserrat';
+  font-weight: 100;
+  color:white;
+  text-align: center;
+  margin-top: 17px;
+  margin-left: 1%;
+  margin-bottom: 60px;
+  font-size: 25px;
+}
+
+.kompetencer4 {
+  background-color: rgba(00, 00, 00, 0.7);
+  float: right;
+  font-family: 'Montserrat';
+  color: white;
+  margin-left: 57%;
+  margin-right: 10%;
+  margin-top: -27.6%;
+}
+
+.læring {
+  font-weight: 100;
+  text-decoration-line: underline;
+  font-size: 25px;
+  text-align: center;
+}
+
+.læring2 {
+font-size: 16px;
+text-align: center;
+}
+
+.forventninger {
+  font-weight: 100;
+  text-decoration-line: underline;
+  font-size: 25;
+  text-align: center;
+}
+
+.forventninger2{
+  font-size: 16px;
+  text-align: center;
+}
+/* om mig */
+#ommig {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 100;
+  margin-bottom: 1%;
+  margin-top: 3%;
+  background-color: #1a1a1a;
+}
+
+.baggrund-ommig{
+  background-color: #1a1a1a;
+  box-shadow: 0px 3px 12px black;
+}
+
+.hr5 {
+  border:none;
+  height: 20px;
+  height: 50px;
+  border-bottom: 0.5px solid grey;
+  box-shadow: 0px 15px 15px -15px grey;
+  margin: -50px auto 10px;
+  width: 21%;
+}
+
+.beskrivelse3 {
+  font-family: 'Montserrat';
+  text-align: center;
+  margin-bottom: 60px;
+  margin-left: 1%;
+  margin-top: 17px;
+  color: white;
+}
+
+.galleri-tekst {
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 100;
+  text-align: center;
+  font-size: 25px;
+}
+
+.galleri-link {
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.mig{
+  color: white;
+  font-weight: 100;
+  font-family: 'Montserrat';
+  margin-right: 50%;
+  margin-left: 10%;
+  margin-top: 7%;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.mig2 {
+  float: right;
+  margin-top: 4%;
+  margin-right: 15%;
+  width: 20%;
+}
+
+.ned {
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 100;
+}
+
+.ned2 {
+  width: 40px;
+  margin-left: 48%;
+}
+
+video {
+width: 100%;
+}
+
+#button {
+    width: 6%;
+    background: lightgrey;
+    border-radius: 40px;
+    margin-left: 10%;
+    box-shadow: 0px 3px 10px black;
+    font-family: 'Montserrat';
+    padding: 12px 31px;
+    border: 3px solid #4d4d4d4d;
+}
+
+.et {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+}
+/* Kontakt */
+#kontakt {
+  margin-top: 0%;
+  text-align: center;
+  color: #0d0d0d;
+  font-size: 50px;
+  margin-bottom: 1%;
+  /*background-color: #c6bdb9;*/
+  background-color: white;
+  font-family: 'Montserrat';
+  font-weight: 100;
+  margin-top: 5%;
+}
+
+.baggrund-kontakt {
+  background-color: white;
+  padding-bottom: 10px;
+  opacity: 90%;
+  box-shadow: 3px 12px white;
+
+}
+
+.info {
+  font-family: 'Montserrat';
+  margin-left: 43%;
+  margin-top: -3%;
+}
+
+.hus {
+  margin-left: 38%;
+  width: 50px;
+}
+
+.telefon {
+margin-left: 38%;
+margin-top: 20px;
+width:47px;
+}
+
+.mail {
+  margin-left: 37.85%;
+  margin-top: 20px;
+  width: 50px;
+}
+
+.beskrivelse4 {
+  font-family: 'Montserrat';
+  text-align: center;
+  margin-bottom: 60px;
+  margin-left: 1%;
+  margin-top: 17px;
+}
+
+/* Footer */
+.footer {
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 30px;
+  text-align: left;
+  font-family: 'Montserrat';
+  font-weight: 100;
+  box-shadow: 0px 1px 10px;
+}
+
+.insta2 {
+  float: right;
+  margin-right: 8%;
+  width: 50px;
+}
+
+.face2 {
+  float: right;
+  margin-right: 1%;
+  width: 49px;
+}

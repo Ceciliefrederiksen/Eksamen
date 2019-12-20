@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+}
+
+/*Navigation*/
+ul {
+  list-style-type: none;
+  padding: 8px;
+  margin: 0;
+  overflow: hidden;
+  background-color: white;
+  opacity: 95%;
+  position: -webkit-sticky; /* Safari */
+  z-index: 99;
+  position: sticky;
+  top: 0;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  box-shadow: 0px 1px 10px #999;
+}
+
+.logo {
+  width: 12%;
+  margin-left: 18px;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+li a:hover {
+  color: grey;
+}
+
+/* Forside */
+.tekst {
+  font-family: 'Montserrat';
+  font-weight : 100;
+  text-align: center;
+  font-size: 55px;
+  margin-top: 3%;
+}
+
+.foto {
+  color: black;
+  text-align: center;
+  padding: 290px;
+  margin-top: -18%;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+#button {
+    width: 10em;
+    background: #f2f2f2;
+    border-radius: 10px;
+    margin-top: %;
+    margin-left: 22%;
+
+}
+
+#button2 {
+  width: 10em;
+  background: #f2f2f2;
+  border-radius: 10px;
+  margin-top: -2.5%;
+  margin-left: 37%;
+
+}
+
+#button3 {
+  width: 10em;
+  background: #f2f2f2;
+  border-radius: 10px;
+  margin-top: -2.5%;
+  margin-left: 52%;
+}
+
+#button5 {
+  width: 10em;
+  background: #f2f2f2;
+  border-radius: 10px;
+  margin-top: -2.5%;
+  margin-left: 67%;
+}
+
+.pil {
+  width: 10%;
+}
+
+.et {
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Montserrat'
+}
+
+.et:hover {
+    box-shadow: 0 14px 18px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #e6e6e6;
+      border-radius: 10px;
+}
+
+/* Galleri tekst */
+#fotografier {
+  font-family: 'Montserrat';
+  font-weight: 100;
+  color: #9d9d9d;
+  text-align: center;
+  font-size: 40px;
+}
+
+#minetegninger {
+   font-family: 'Montserrat';
+   font-weight: 100;
+   color: #9d9d9d;
+   text-align: center;
+   font-size: 40px;
+   margin-top: 10%;
+ }
+
+#madbilleder{
+  font-family: 'Montserrat';
+  font-weight: 100;
+  color: #9d9d9d;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10%;
+}
+
+#stemningsbilleder {
+  font-family: 'Montserrat';
+  font-weight: 100;
+  color: #9d9d9d;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10%;
+}
+
+p {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 100;
+  color: #9d9d9d;
+  font-size: 20px;
+}
+
+hr {
+border: none;
+height: 20px;
+height: 50px;
+width: 40%;
+margin-top: -10px;
+border-bottom: 0.5px solid black;
+box-shadow: 0px 15px 15px -15px black;
+margin: -50px auto 10px;
+}
+
+.to {
+  border: none;
+  height: 20px;
+  height: 50px;
+  width: 40%;
+  margin-top: -10px;
+  border-bottom: 0.5px solid #9d9d9d;
+  box-shadow: 0px 15px 15px -15px #9d9d9d;
+  margin: -50px auto 10px;
+}
+
+.tre {
+  border: none;
+  height: 20px;
+  height: 50px;
+  width: 40%;
+  margin-top: -10px;
+  border-bottom: 0.5px solid #9d9d9d;
+  box-shadow: 0px 15px 15px -15px #9d9d9d;
+  margin: -50px auto 10px;
+  margin-bottom: 3%;
+}
+
+/* Galleri */
+.galleri {
+  background-color: #1a1a1a;
+  margin-top: -24%;
+  box-shadow: 0px 3px 20px black;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 50%;
+  padding: 6px;
+  width: 100%;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  margin-top: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* footer */
